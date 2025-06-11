@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@import "swiper/css";
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Dark theme defaults */
+:root[data-theme="dark"] {
+  --background-color: #1e1b10;
+  --text-color:#E8E3D7;
+  --primary-color: #d4af37;
+}
+
+/* Light theme overrides */
+:root[data-theme="light"] {
+  --background-color: #E8E3D7;
+  --text-color: #1e1b10;
+  --primary-color: #d4af37;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+.logo {
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: semibold;
+}
+
+button {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.modal-box {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.dropdown:hover .dropdown-list {
+  display: grid;
+}
+
+.black {
+  background-color: #2a271b;
+}
+
